@@ -1,0 +1,36 @@
+.exchange-section__tables-container {
+    justify-content: space-around;
+}
+
+.exchange-section__tables-container::-webkit-scrollbar {
+    display: none;
+}
+
+.exchange-section__table-container {
+    min-width: 23.5rem;
+    margin: 0;
+}
+
+.img-section__title {
+    left: calc(50% - 17rem);
+    width: 34rem;
+    font-size: 5rem;
+}
+
+.plans-section__cards-container {
+    justify-content: space-around;
+}
+
+.plans-section__cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.plans-section__card {
+    min-width: 19rem;
+    max-width: 19rem;
+    margin: 0;
+}
+
+footer {
+    justify-content: space-around;
+}

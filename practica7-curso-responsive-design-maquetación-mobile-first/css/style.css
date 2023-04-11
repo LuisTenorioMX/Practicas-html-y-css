@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --grey-1: #757575;
+    --soft-blue: #e7f5ff;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    --soft-orange: #ffe9d5;
+    --bitcoin-orange: #f7931a;
+    --secondary-blue: #1a9af7;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(207.8deg, var(--black) 16.69%, var(--bitcoin-orange) 100%);
+}
+
+.header__img {
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 4rem;
+}
+
+.header__text-container {
+    width: 90%;
+    max-width: 90rem;
+    margin: 4rem 0 6rem 0;
+}
+
+.header__h1 {
+    margin-bottom: 2.5rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+
+.header__p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--soft-orange);
+}
+
+.header__button-container {
+    position: relative;
+}
+
+.header__button {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 3.6rem;
+    left: calc(50% - 11.15rem);
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    box-shadow: 0px 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+    border-radius: 0.4rem;
+}
+
+.header__button i {
+    width: 1.4rem;
+    height: 0.8rem;
+    margin-left: 1.5rem;
+    background-image: url('../assets/icons/down-arrow.svg');
+}
+
+.exchange-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.exchange-section__img {
+    width: 19.5rem;
+    height: 19.5rem;
+    margin-top: 6.5rem;
+    margin-bottom: 4rem;
+}
+
+.exchange-section__text-container {
+    width: 90%;
+    max-width: 90rem;
+}
+
+.exchange-section__tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    margin: 4.8rem 0 4.9rem 0;
+}
+
+.exchange-section__table-container {
+    scroll-snap-align: center;
+    min-width: 70%;
+    margin: 0 15%;
+}
+
+.exchange-section__table-container__table {
+    width: 100%;
+    margin: 1.6rem 0 1.6rem 0;
+}
+
+.exchange-section__title {
+    margin-bottom: 2.5rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+
+.exchange-section__p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--grey-1);
+}
+
+.exchange-section__table-container__title {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff9536;
+}
+
+.--table-container__title-blue {
+    color: var(--secondary-blue);
+}
+
+.exchange-section__table-container__left-table {
+    width: 50%;
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #B5B0AC;
+    background-color: var(--just-white);
+}
+
+.--table-top-left {
+    border-radius: 0.8rem 0 0 0;
+}
+
+.--table-top-right {
+    border-radius: 0 0.8rem 0 0;
+}
+
+.--table-buttom-left {
+
+    border-radius: 0 0 0.8rem 0;
+}
+
+.--table-buttom-right {
+    border-radius: 0 0 0 0.8rem;
+
+}
+
+.exchange-section__table-container__right-table {
+    width: 50%;
+    padding: 1.1rem 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--grey-1);
+    background-color: var(--just-white);
+}
+
+.exchange-section__table-container__icon-down,
+.exchange-section__table-container__icon-up {
+    display: inline-block;
+    margin-left: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.exchange-section__table-container__icon-down {
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.exchange-section__table-container__icon-up {
+    background-image: url('../assets/icons/trending-up.svg');
+}
+
+.exchange-section__table-container__p,
+.exchange-section__table-container__p b {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+}
+
+.exchange-section__table-container__p {
+    width: max-content;
+    margin: 0 auto 0 auto;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--soft-orange);
+}
+
+.--table-container__p-blue {
+    background-color: var(--soft-blue);
+}
+
+.exchange-section__icon-container {
+    position: relative;
+}
+
+.exchange-section__icon {
+    position: absolute;
+    display: inline-block;
+    left: calc(50% - 2.05rem);
+    top: -1.25rem;
+    width: 4.057rem;
+    height: 2.41rem;
+    background-image: url('../assets/icons/batata.svg');
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.detail-section__text-container {
+    text-align: center;
+    width: 90%;
+    max-width: 90rem;
+    margin: 6.4rem 0 3.2rem 0;
+}
+
+.detail-section__text-container__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    color: var(--just-white);
+}
+
+.detail-section__text-container__p,
+.detail-section__article__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.detail-section__articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.detail-section__article {
+    width: 90%;
+    max-width: 90rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0.4rem;
+    background-color: var(--warm-black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.--article-margin-bottom {
+    margin-bottom: 4.6rem;
+}
+
+.detail-section__article__icon {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 1.4rem 0 0 1.6rem;
+}
+
+.--icon-clock {
+    background-image: url('../assets/icons/clock.svg');
+}
+
+.--icon-eye {
+    background-image: url('../assets/icons/eye.svg');
+}
+
+.--icon-dollar {
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+
+.--icon-check {
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.detail-section__article__title {
+    margin: 1.4rem 0 1rem 1.6rem;
+    font-size: 1.8rem;
+    color: var(--just-white);
+}
+
+.detail-section__article__text {
+    margin: 0 0 2.2rem 1.6rem;
+}
+
+.img-section {
+    position: relative;
+}
+
+.img-section__title {
+    position: absolute;
+    left: calc(50% - 14.4rem);
+    top: 14%;
+    width: 28.8rem;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.img-section__img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.plans-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.plans-section__text-container {
+    width: 90%;
+    max-width: 90rem;
+    margin: 6.4rem 0 3.4rem 0;
+}
+
+.plans-section__text-container__h2 {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.plans-section__text-container__p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--grey-1);
+}
+
+.plans-section__cards-container {
+    display: flex;
+    width: 100%;
+    padding: 1.55rem 0 1.5rem 0;
+    margin-bottom: 4.9rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+.plans-section__cards-container::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 0.3rem;
+}
+
+.plans-section__cards-container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+.plans-section__card {
+    scroll-snap-align: center;
+    min-width: 60%;
+    margin: 0 20%;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 0.8rem;
+}
+
+.--card-relative {
+    position: relative;
+}
+
+.plans-section__card__absolute {
+    position: absolute;
+    left: calc(50% - 4.94rem);
+    top: -1.55rem;
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 0.8rem;
+}
+
+.plans-section__card__title {
+    margin-top: 3.1rem;
+    font-size: 1.4rem;
+}
+
+.plans-section__card__price-container {
+    display: inline-flex;
+}
+
+.plans-section__card__price-container__dollar {
+    margin: 0.9rem 0.4rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.plans-section__card__price-container__num {
+    font-size: 5.2rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.plans-section__card__p {
+    margin: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--grey-1);
+}
+
+.plans-section__card__button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    border: 0.2rem solid var(--bitcoin-orange);
+    margin: 0 2rem 2.4rem 2rem;
+    background-color: var(--off-white);
+    border-radius: 0.4rem;
+}
+
+.plans-section__card__button p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.plans-section__card__button i {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bitcoin-orange);
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 4rem 0 4rem 0;
+}
+
+.footer__li {
+    list-style: none;
+}
+
+.footer__a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
+
+.footer__right {
+    width: 6.4rem;
+    height: 5rem;
+}
+
+.footer__icon {
+    width: 100%;
+    height: 100%;
+}

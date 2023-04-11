@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    padding: 0.6rem;
+}
+
+.header-nav {
+    height: 100%;
+}
+
+.header-nav__ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav__li {
+    padding-left: 1.5rem;
+}
+
+.header-nav__li--Pright {
+    padding-right: 1.5rem;
+}
+
+.header-nav__a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.header-nav__container-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.header-nav__container-icon:hover {
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.header-nav__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav__container-icon--menu {
+    padding: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.header-nav__container-icon--profile {
+    padding: 0.4rem;
+}
+
+.header-nav__icon--profile {
+    border-radius: 50%;
+}
+
+.main-countain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    height: calc(100vh - 15.5rem);
+    width: 100%;
+}
+
+.main-logo {
+    height: calc(100% - 56rem);
+    min-height: 9.2rem;
+    max-height: 29rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-logo__img {
+    height: 9.2rem;
+}
+
+.container {
+    padding: 2rem;
+    padding-top: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-text {
+    width: 58.2rem;
+    height: 4.4rem;
+    padding: 0 0.8rem 0 1.4rem;
+    border: 0.1rem solid #dfe1e5;
+    border-radius: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-text:hover {
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.container-text-lupa {
+    padding-right: 1.3rem;
+}
+
+.container-text-lupa__lupa {
+    display: inline-block;
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 2rem;
+    height: 4.4rem;
+}
+
+.container-text__input {
+    width: 100%;
+    height: 3.4rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.container-text-voice {
+    width: 4rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-text-voice__voice {
+    width: 2.4rem;
+}
+
+.container-buttons {
+    padding: 1.8rem 0 1.2rem 0;
+}
+
+.container-buttons__buttons {
+    height: 3.6rem;
+    margin: 1.1rem 0.4rem;
+    padding: 0 1.6rem;
+    border: 0.1rem solid #f2f2f2;
+    border-radius: 0.4rem;
+    background-color: #f2f2f2;
+    color: #5f6368;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.container-buttons__buttons:hover {
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem #000001;
+    color: #222;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 2.4rem;
+    font-size: 1.3rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.footer-country {
+    color: #5f6368;
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footer-container-navs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    color: #5f6368;
+    font-size: 1.4rem;
+}
+
+.footer-left-ul {
+    display: flex;
+    padding-left: 2rem;
+}
+
+.footer-right-ul {
+    display: flex;
+    padding-right: 2rem;
+}
+
+.footer-li {
+    padding: 1.5rem;
+}

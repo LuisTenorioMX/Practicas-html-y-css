@@ -1,0 +1,60 @@
+.exchange-section__tables-container {
+    width: 90rem;
+}
+
+.detail-section__articles-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.detail-section__article {
+    width: 35%;
+    height: 16.4rem;
+    margin-bottom: 0;
+}
+
+.--article-margin-bottom {
+    margin-bottom: 0;
+}
+
+.img-section {
+    height: 50vh;
+}
+
+.img-section__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-section__title {
+    left: calc(50% - 24rem);
+    width: 48rem;
+    font-size: 7rem;
+}
+
+.plans-section__cards-container {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.plans-section__card {
+    min-width: 25rem;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+.footer__left {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 0 2rem 4rem;
+}
+
+.footer__right {
+    margin-right: 4rem;
+}
